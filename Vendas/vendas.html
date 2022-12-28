@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um potal que irá te auxiliar com formulários de venda, planilhas de cadastro, e banco de dados informativos dos nossos Produtos" >
+    <title>Portal Probelle - Representantes</title>
+<!--     <link rel="stylesheet" type="text/css" href="/css/style.css">
+ --></head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+/*font-family: 'Righteous', cursive;
+font-family: 'Sarala', sans-serif*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #FFFFFF 16.62%, #353434 85.61%);
+
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;  
+    padding: 10px;
+
+}
+
+.cabecalho:hover {
+    background-color: #353430;
+    opacity: 85%;
+    transition: 3s;
+}
+
+.cabecalho-imagem {
+    height: 55px;
+}
+
+
+.cabecalho-menu {
+    display: flex;
+    gap: 34px;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.cabecalho-menu-item:hover{
+    background-color: #FFF2E7;
+    border-radius: 5px;
+    color: #181716;
+}
+
+.conteudo {
+    margin-bottom: 6px;    
+    border-top: 0.5px solid #fff2e7;
+    
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    color: #353434;
+}
+
+.conteudo-principal-escrito-titulo::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+ @keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+
+    }
+ }
+
+.conteudo-principal-escrito-subtitulo{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 230px;
+}
+
+.conteudo-principal-escrito-subtitulo2{
+    display: flex;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    margin: 20px;
+    position: right;
+}
+
+.conteudo-principal-escrito-botao{
+    background-color: #181716;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;    
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.conteudo-principal-escrito-botao:hover{
+    background-color: rgba(236, 214, 196, 0.53);
+    color: #181716;
+    cursor: pointer;
+
+}
+.conteudo-principal-imagem {
+    height: 600px;
+    overflow: hidden;
+}
+
+.conteudo-principal-imagem {
+    max-width: 100%;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.conteudo-principal-imagem:hover {
+    -moz-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top:  10px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid #fff2e7;
+    padding-top: 26px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.conteudo-segundario-paragrafo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #181716
+}
+
+.rodape {
+    padding: 2.1px;
+    border-top: 0.4px solid #fff2e7;
+    display: flex;
+    align-items: center;
+    flex-direction: row;    
+    text-align: center;
+    justify-content: space-around;
+
+}
+
+.rodape-imagem{
+    height: 80px;
+}
+</style>
+
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="https://uploaddeimagens.com.br/images/004/276/209/original/logo_red.png?1672232935" alt="Logo do Portal Probelle">
+        <nav class="cabecalho-menu">    
+            <a class="cabecalho-menu-item" href="#"><strong>Dúvidas (Em Breve)</strong></a>
+            <a class="cabecalho-menu-item" href="#"><strong> Tutorial (Em Breve)</strong></a>
+            <a class="cabecalho-menu-item" href="VENDAS - PROBELLE - V1039.xlsm"><strong>Formulário de Vendas</strong></a>
+            <a class="cabecalho-menu-item" href="FICHA DE CADASTRO CLIENTES.xlsx"><strong>Formulário de Cadastro</strong></a>
+            <a class="cabecalho-menu-item" href="Cadastro de Produto.xlsx"><strong>Ficha Técnica - Produtos</strong></a>
+            <a class="cabecalho-menu-item" href="https://drive.google.com/drive/folders/1RyqgO4gE9juHb9R1NgQX4dtJiCNRE_Zu"><strong>Vídeos</strong></a>
+            <a class="cabecalho-menu-item" href="https://drive.google.com/drive/folders/1iRQwosGyNmJnvHvfXi1iMIdl-YuaPKDn"><strong>Fotos</strong></a>
+            <a class="cabecalho-menu-item" href="https://drive.google.com/drive/folders/1f2QGeoKnJwtLNxiEQ3YGy_Rol8mYjMEM"><strong>Catálogos</strong></a>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <section class="conteudo-principal">    
+            <div class="conteudo-principal-escrito">
+                <h1 class="conteudo-principal-escrito-titulo">Portal Vendas Probelle</h1>
+                <h1 class="conteudo-principal-escrito-subtitulo2">Lançamentos: <br> Gel íntimo -  Queratina  -  Óleos Essenciais</h1>
+<!--                 <h2 class="conteudo-principal-escrito-subtitulo">                       Novidades</h2> -->
+<!--                 <h1 class="conteudo-principal-escrito-subtitulo2">Lançamento - Klab Gel íntimo - Laboratório Probelle</h1> -->
+                <a href="https://wa.me/message/VCP7T6XVUAQBO1"><button class="conteudo-principal-escrito-botao">Fale Conosco</button></a>
+            </div>
+            <img class="conteudo-principal-imagem" src="https://uploaddeimagens.com.br/images/004/276/202/original/mock.png?1672232703" alt="Lançamento - Probelle Laboratório">
+
+            <script>    
+                function typeWriter(elemento) {
+                    const textoArray = elemento.innerHTML.split('');
+                    elemento.innerHTML = '';
+                    textoArray.forEach((letra, i)=> {
+                        console.log(i);
+                        setTimeout(() => elemento.innerHTML += letra, 75 * i);
+                    });
+                        
+                    }
+                
+
+                const titulo = document.querySelector('h1')
+                typeWriter(titulo)
+
+            </script>
+        </section>
+
+        <section class="conteudo-secundario">
+            <h3 class="conteudo-secundario-titulo">O que este Portal faz por você?</h3>
+            <p class="conteudo-segundario-paragrafo">Aqui você acessa as <strong>versões mais atualizadas</strong> da planilha de Vendas</p>
+            <p class="conteudo-segundario-paragrafo">Acompanha em tempo real o <strong>lançamento dos nossos Produtos</strong></p>
+            <p class="conteudo-segundario-paragrafo">Fica por dentro de tudo o que acontece com o <strong> PROBELLE CRIATIVO.</strong></p>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+         <img class="rodape-imagem" src="https://uploaddeimagens.com.br/images/004/276/207/original/rodape.png?1672232872" alt="Logomarca Probelle rodapé">
+            <br> <h3 class="conteudo-segundario-paragrafo"><strong> Desenvolvido por Iago Alves <br> © 2022 Probelle. Todos os direitos reservados.</strong></h3>
+    </footer>
+</body>
+
+</html>
